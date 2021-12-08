@@ -21,36 +21,36 @@ public class MayorLongitudTest {
 	
 	Editor editor;
 	
+	@BeforeEach
+	void setUp() {
+		editor = new Editor();
+	}
+	
 	@Test
 	void C1Test() throws EmptyCollectionException {
-		editor = new Editor();
 		assertNull(editor.mayorLongitud());
 	}
 	
 	@Test
 	void C3Test() throws EmptyCollectionException {
-		editor = new Editor();
 		editor.leerFichero("MayorLongitudC3.txt");
 		assertNull(editor.mayorLongitud());
 	}
 	
 	@Test
 	void C4Test() throws EmptyCollectionException {
-		editor = new Editor();
 		editor.leerFichero("MayorLongitudC4.txt");
 		assertEquals("abc" ,editor.mayorLongitud());
 	}
 	
 	@Test
 	void C7Test() throws EmptyCollectionException {
-		editor = new Editor();
 		editor.leerFichero("MayorLongitudC7.txt");
 		assertEquals("abc" ,editor.mayorLongitud());
 	}
 	
 	@Test
 	void C8Test() throws EmptyCollectionException {
-		editor = new Editor();
 		editor.leerFichero("MayorLongitudC8.txt");
 		assertEquals("efgh" ,editor.mayorLongitud());
 	}

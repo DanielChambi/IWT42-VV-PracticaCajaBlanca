@@ -86,7 +86,6 @@ class SustituirPalabraTest {
 		for (int i = 1; i <= size && continua; i++) {
 			AbstractSingleLinkedListImpl<String> l1 = e1.getLinea(i);
 			AbstractSingleLinkedListImpl<String> l2 = e2.getAtPos(i);
-			if (l1.size() > 0) System.out.println(l1.getAtPos(1));
 			if (l1.size() == l2.size()) {
 				for (int j = 1; j <= l1.size() && continua; j++) {
 					if (!l1.getAtPos(j).equals(l2.getAtPos(j))) {

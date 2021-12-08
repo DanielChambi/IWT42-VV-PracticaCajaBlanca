@@ -30,8 +30,7 @@ public class NumPalabrasTest {
 	
 	@Test
 	void C1Test() throws EmptyCollectionException {
-		editor.leerFichero("NumPalabrasC1.txt");
-		
+
 		  assertThrows(IllegalArgumentException.class, () -> {
 			  editor.numPalabras(0, 2,"a");
 	       });
@@ -56,7 +55,7 @@ public class NumPalabrasTest {
 	
 	@Test
 	void C3Test() throws EmptyCollectionException {
-		editor.leerFichero("NumPalabrasC1.txt");
+		editor.leerFichero("NumPalabrasC3.txt");
 		
 		  
 		 assertEquals(0,editor.numPalabras(1,-1,"a"));
