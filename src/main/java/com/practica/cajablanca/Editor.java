@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+
 import com.cajanegra.AbstractSingleLinkedListImpl;
 import com.cajanegra.EmptyCollectionException;
-import com.cajanegra.SingleLinkedListImpl;
+import com.cajanegra.SingleLinkedListImpl; 
 
 public class Editor {
 
